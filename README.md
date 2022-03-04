@@ -32,3 +32,10 @@
   
   여기서는 Blog Index(메인페이지) 진입 시 상위 3개의 글만 조회되고 <br>
   MORE 버튼을 클릭할 때마다 3개의 추가 데이터를 조회할 수 있도록 한다.
+  
+  * page 별 블로그 글 데이터 조회 API 호출
+  * jQuery Ajax 사용
+  * Response 데이텉를 활용하여 HTML 태그를 append
+
+
+  
