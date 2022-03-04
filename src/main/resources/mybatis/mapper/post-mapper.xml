@@ -6,6 +6,10 @@
     <select id="findAll" resultType="com.codepresso.codepressoblog.vo.Post">
         SELECT * FROM post ORDER BY id DESC;
     </select>
-
+    <select id="findByPage" resultType="com.codepresso.codepressoblog.vo.Post">
+        SELECT * FROM post ORDER BY id DESC LIMIT #{limit} OFFSET #{offset}
+    </select>
 </mapper>
+
+
 

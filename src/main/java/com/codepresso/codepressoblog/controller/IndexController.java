@@ -12,7 +12,7 @@ import java.util.List;
 @Controller
 public class IndexController {
 
-    private PostService postService;
+    private PostService postService; //블로그 글 데이터를 조회해서 사용해야하기 때문에 PostService를 가져올 필요가 있다.
 
     public IndexController(PostService postService){
         this.postService = postService;

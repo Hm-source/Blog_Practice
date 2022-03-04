@@ -23,4 +23,8 @@ public class PostService {
         return postMapper.findAll();
     }
 
+    public List<Post> getPostByPage(Integer page, Integer size) {
+        return postMapper.findByPage(size, (page-1) * size); //size = limit, (page-1) * size = offset
+    }
+
 }
