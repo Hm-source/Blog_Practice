@@ -20,7 +20,7 @@ public class IndexController {
 
     @RequestMapping(value = "/")
     public String index(Model model) {
-        List<Post> postList = postService.getAllPost(); //getAllPost()로 결과를 받는다.
+        List<Post> postList = postService.getPostByPage(1,3);
         model.addAttribute("posts", postList); //받은 결과를 model에 posts라는 속성으로 추가한다.
         return "index"; // 추가한 모델을 mustache index 파일에 보내게 된다.
     }
