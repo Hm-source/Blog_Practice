@@ -31,9 +31,14 @@ public class PostService {
         return postMapper.findOne(id);
     }
 
-    public Boolean savePost(Post post) {
+    public boolean savePost(Post post) {
         Integer result = postMapper.save(post);
         return result == 1; // 1이면 정상적으로 저장, 원래는 exception handling 코드도 추가되어야 한다.
+    }
+
+    public boolean updatePost(Post post) {
+        Integer result = postMapper.update(post);
+        return result == 1;
     }
 
 }
