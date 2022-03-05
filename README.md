@@ -1,5 +1,6 @@
 # Blog_Practice
 블로그 기본 기능 구현 및 추가 기능 구현
+<br>
 
 ## Blog 기본 기능 개발
 <br>
@@ -50,3 +51,26 @@
 
 * * *
 <br>
+
+  ### 4. 글 저장 기능
+  * "글작성" 메뉴 클릭 시 글 작성 화면으로 진입한다.
+  * Input Form 에 정보를 입력한 후 "등록" 버튼을 클릭할 수 있다.
+    * 버튼에 대한 클릭 이벤트 처리
+    * ajax로 'POST /post' REST API 호출
+    * 작성된 글 정보는 Request Body 데이터로 호출
+  * 글 작성이 완료 되면 Index 페이지로 진입
+
+
+  -> Backend
+   + Mapper 개발
+   + Service 개발
+   + Controller(REST API) 개발
+   + REST API 테스트
+
+  -> Frontend
+   + '등록' 버튼 클릭 이벤트 처리
+   + 버튼 클릭 시 form에 작성된 데이터를 가져옴
+   + ajax로 REST API 호출
+   + API 정상 응답 시 index 화면으로 이동(redirect)
+
+
