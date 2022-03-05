@@ -12,6 +12,10 @@
     <select id="findOne" resultType="com.codepresso.codepressoblog.vo.Post">
         SELECT * FROM post WHERE id=#{id};
     </select>
+    <insert id="save">
+        INSERT INTO post(title, content, username)
+        VALUES (#{post.title}, #{post.content}, #{post.username});
+    </insert>
 </mapper>
 
 
