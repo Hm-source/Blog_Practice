@@ -27,4 +27,8 @@ public class PostService {
         return postMapper.findByPage(size, (page-1) * size); //size = limit, (page-1) * size = offset
     }
 
+    public Post getPostById(Integer id) {
+        return postMapper.findOne(id);
+    }
+
 }
