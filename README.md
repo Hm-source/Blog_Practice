@@ -73,4 +73,29 @@
    + ajax로 REST API 호출
    + API 정상 응답 시 index 화면으로 이동(redirect)
 
+ * * *
+ <br>
+ 
+ ### 5. 글 수정 기능
+ * 글 상세 페이지에서 "수정" 버튼 클릭하면 수정 페이지 진입한다.
+ * 글 입력 Form에 기존에 작성된 데이터를 노출한다.(제목, 본문)
+ * 데이터 수정 후 "수정" 버튼 클릭 시 DB 저장 후 글 상세 페이지로 Redirect한다.
 
+<br>
+*Backend
+  + 글 수정 REST API를 위한 Mapper 개발
+  + 글 수정 REST API를 위한 Service 개발
+  + 글 수정 REST API를 위한 Controller(REST API) 개발
+  + 글 수정 REST API 테스트
+  + 글 수정 화면을 위한 PostPageController 개발
+
+<br>
+*Frontend
+  + '수정' 버튼 클릭 이벤트 처리
+  + 버튼 클릭 시 form에 작성된 데이터를 가져온다.
+  + ajax로 REST API 호출
+  + API 정상 응답 시 글 상세 화면으로 이동(redirect)
+
+
+ 
+ 
